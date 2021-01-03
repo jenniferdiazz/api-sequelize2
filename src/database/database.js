@@ -1,5 +1,5 @@
 const Sequelize  = require("sequelize");
-const sequelize = new Sequelize('SalfaLink', 'sa', 'Micrologica2014', {
+const sequelize = new Sequelize('', '', '', {
     host: '127.0.0.1',
     dialect: 'mssql',
     dialectOptions: {
