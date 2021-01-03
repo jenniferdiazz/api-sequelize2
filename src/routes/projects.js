@@ -1,9 +1,19 @@
 const Project = require('../models/Project');
 
 const router = require('express').Router();
-const {create} = require('../controllers/project.controller')
+const {
+create,
+list,
+update,
+remove,
+findOne,
+} = require('../controllers/project.controller')
 
-router.post("/", create)
+router.post("/", create);
+router.get("/", list);
+router.get("/:id", findOne)
+router.delete("/:id", remove)
+router.put("/:id", update)
 //const obtener = require('../controllers/project.controller');
 
 // router.post("/", async (req, res) => {
